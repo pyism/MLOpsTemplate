@@ -30,6 +30,7 @@ jobs:
 
       - name: AZ Login
         uses: azure/login@v1
+        
         with:
           #-----------------------------------------------
           # SETUP: Provide Azure Credentials Secret
