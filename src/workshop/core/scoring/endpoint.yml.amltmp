@@ -3,6 +3,6 @@ $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schem
 # SETUP: Replace `mlops-workshop-endpoint` with your own endpoint name. 
 #        It has to be globally unique.
 #----------------------------------------------------------------------
-name: mlops-workshop-endpoint-mf 
+name: mlops-workshop-endpoint-mf2 
 
 auth_mode: key
