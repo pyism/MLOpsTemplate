@@ -46,7 +46,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-deploy
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
@@ -59,7 +59,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-test
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
@@ -71,7 +71,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-swap
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
