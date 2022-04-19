@@ -30,12 +30,12 @@ jobs:
 
       - name: AZ Login
         uses: azure/login@v1
+        
         with:
-          
           #-----------------------------------------------
-	        # SETUP: Provide Azure Credentials Secret
-	        #-----------------------------------------------
-          creds: ${{ secrets.AZURE_CREDENTIALS_USERNAME }}
+          # SETUP: Provide Azure Credentials Secret
+          #-----------------------------------------------
+          creds: ${{ secrets.AZURE_CREDENTIALS_USERNAME }} 
 
       - name: Install az ml & and tools
         run: |
@@ -47,7 +47,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-deploy
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
@@ -60,7 +60,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-test
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
@@ -72,7 +72,7 @@ jobs:
         uses: ./.github/actions/aml-endpoint-swap
         with:
           #------------------------------------------------------------
-			    # SETUP: Provide values for <resource_group>, <aml_workspace>
+          # SETUP: Provide values for <resource_group>, <aml_workspace>
           #------------------------------------------------------------
           resourceGroup: rgMLOps
           workspaceName: mlopsmfaml
